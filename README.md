@@ -216,6 +216,10 @@ Premium Edition: coming soon.
 
 What is planned and why it is premium: [docs/PREMIUM-ROADMAP.md](docs/PREMIUM-ROADMAP.md).
 
+## Contributing
+
+Bug fixes, clearer docs and better tests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the branching model, commit conventions and the verification steps. Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 MIT for the Free Edition. See [LICENSE](LICENSE).
