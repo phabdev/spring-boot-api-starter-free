@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: spring-boot-api-starter
+
+  datasource:
+    url: jdbc:h2:mem:apistarter;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+    show-sql: false
+
+  # Dev-only: browse the in-memory database at http://localhost:8080/h2-console
+  # JDBC URL: jdbc:h2:mem:apistarter | user: sa | password: (empty)
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: 8080
+
+# Swagger UI:   http://localhost:8080/swagger-ui/index.html
+# OpenAPI JSON: http://localhost:8080/v3/api-docs
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+    tags-sorter: alpha
+
+logging:
+  level:
+    root: INFO
+    com.phabdev.apistarter: DEBUG
